@@ -1,6 +1,7 @@
 import StatusBadge from '../StatusBadge';
 import { TableContainer, Table } from './styles';
 import PropTypes from 'prop-types';
+import { PencilIcon, EyeIcon } from '@phosphor-icons/react';
 
 export default function OrdersTable({ pedidos, onView, onEdit }) {
   return (
@@ -30,13 +31,13 @@ export default function OrdersTable({ pedidos, onView, onEdit }) {
                 <td>{pedido.telefone}</td>
                 <td>{pedido.tipoTrofeu || 'Não informado'}</td>
                 <td><StatusBadge status={pedido.status} /></td>
-                <td>{pedido.data}</td>
+                <td>{pedido.criado_em}</td>
                 <td>
                   <button className="btn btn-icon" title="Visualizar" onClick={() => onView(pedido)}>
-                    <i className="fas fa-eye"></i>
+                  <EyeIcon size={26} weight="bold"/>
                   </button>
                   <button className="btn btn-icon" title="Editar" onClick={() => onEdit(pedido)}>
-                    <i className="fas fa-edit"></i>
+                  <PencilIcon size={26} weight="bold" />
                   </button>
                 </td>
               </tr>

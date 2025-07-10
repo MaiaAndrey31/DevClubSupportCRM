@@ -19,4 +19,8 @@ export const Badge = styled.span`
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   background: ${({ color }) => color || '#6c757d'};
   color: #fff;
+  @media (max-width: 500px) {
+    font-size: 0.67rem;
+    padding: 0.3rem 0.6rem;
+  }
 `;

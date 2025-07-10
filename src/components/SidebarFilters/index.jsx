@@ -25,7 +25,7 @@ export default function SidebarFilters({ status, search, onStatusChange, onSearc
         <button className="btn" onClick={onApply}>
           Aplicar Filtros
         </button>
-        <button className="btn btn-secondary" onClick={onReset}>
+        <button className="btn-secondary" onClick={onReset}>
           Limpar Filtros
         </button>
       </FilterSection>

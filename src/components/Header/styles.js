@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const HeaderContainer = styled.header`
   background-color: transparent;
   border-bottom: 1px solid var(--border-color);
-  padding: 1rem 0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -12,7 +11,17 @@ export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 2rem;
   color: var(--white);
+
+  @media (max-width: 800px) {
+    padding: 0.7rem 1rem;
+  }
+  @media (max-width: 500px) {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 0.5rem;
+  }
 `;
 
 export const LogoTitle = styled.h1`
@@ -23,8 +32,16 @@ export const LogoTitle = styled.h1`
   align-items: center;
   gap: 0.75rem;
   img {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 80px;
+    @media (max-width: 600px) {
+      width: 60px;
+      height: 50px;
+    }
+    @media (max-width: 400px) {
+      width: 44px;
+      height: 38px;
+    }
   }
 `;
 
@@ -42,4 +59,11 @@ export const StatusIndicator = styled.div`
   }
   &.connected .status-dot { background: #28a745; }
   &.error .status-dot { background: #dc3545; }
+  @media (max-width: 500px) {
+    gap: 0.3rem;
+    .status-dot {
+      width: 10px;
+      height: 10px;
+    }
+  }
 `;

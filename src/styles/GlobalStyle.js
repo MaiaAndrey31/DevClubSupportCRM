@@ -35,6 +35,26 @@ const GlobalStyle = createGlobalStyle`
     color: var(--text-color);
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
     overflow-x: hidden;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    html {
+      font-size: 15px;
+    }
+    body {
+      font-size: 0.95rem;
+      padding: 0 0.5rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    html {
+      font-size: 14px;
+    }
+    body {
+      font-size: 0.9rem;
+    }
   }
 
   a {
