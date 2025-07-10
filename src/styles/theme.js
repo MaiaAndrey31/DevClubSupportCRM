@@ -8,7 +8,7 @@ const theme = {
     warning: '#ffd93d',
     white: '#ffffff',
     dark: '#2c3e50',
-    text: '#ffffff',
+    text: '#efefef',
     textMuted: 'rgba(255,255,255,0.8)',
   },
   borderRadius: '8px',

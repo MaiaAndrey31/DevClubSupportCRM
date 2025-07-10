@@ -1,28 +1,6 @@
-import styled from 'styled-components';
-
-const Sidebar = styled.aside`
-  width: 280px;
-  background-color: white;
-  border-right: 1px solid var(--border-color);
-  padding: 1.5rem;
-  overflow-y: auto;
-`;
-
-const FilterSection = styled.div`
-  .filter-group {
-    margin-bottom: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  h3 {
-    margin-bottom: 1rem;
-    color: var(--primary-color);
-    font-size: 1.1rem;
-  }
-`;
 
 import PropTypes from 'prop-types';
+import { FilterSection, Sidebar } from './styles';
 
 export default function SidebarFilters({ status, search, onStatusChange, onSearchChange, onApply, onReset }) {
   return (

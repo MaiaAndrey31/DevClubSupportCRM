@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const statusColors = {
+export const statusColors = {
   'novo pedido': '#007bff',
   'em processamento': '#ffc107',
   'enviado': '#17a2b8',
@@ -8,7 +8,7 @@ const statusColors = {
   'cancelado': '#dc3545',
 };
 
-const Badge = styled.span`
+export const Badge = styled.span`
   display: inline-flex;
   align-items: center;
   padding: 0.4rem 1rem;
@@ -20,14 +20,3 @@ const Badge = styled.span`
   background: ${({ color }) => color || '#6c757d'};
   color: #fff;
 `;
-
-import PropTypes from 'prop-types';
-
-export default function StatusBadge({ status }) {
-  const color = statusColors[status?.toLowerCase()] || '#6c757d';
-  return <Badge color={color}>{status}</Badge>;
-}
-
-StatusBadge.propTypes = {
-  status: PropTypes.string.isRequired,
-};
