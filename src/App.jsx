@@ -76,7 +76,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Layout>
-        <Header status={status} />
+        <Header status={status} page='Troféu Dev Club' />
         <Content>
           <SidebarFilters
             status={filtros.status}

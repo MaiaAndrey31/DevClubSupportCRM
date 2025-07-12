@@ -6,7 +6,6 @@ export async function getPedidos() {
   if (!res.ok) throw new Error('Erro ao buscar pedidos');
  
   return res.json();
-  
 }
 
-// Outras funções de API podem ser adicionadas aqui
+

@@ -30,10 +30,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    margin: 0;
     font-family: var(--font-sans);
     line-height: 1.6;
     color: var(--text-color);
-    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
+    background: linear-gradient(135deg, #000c24 0%, #3e5c9e 100%);
     overflow-x: hidden;
     font-size: 1rem;
   }
