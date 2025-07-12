@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
+import theme from '../../styles/theme';
 
 export const HeaderContainer = styled.header`
   background-color: transparent;
@@ -11,8 +13,9 @@ export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   color: var(--white);
+
 
   @media (max-width: 800px) {
     padding: 0.7rem 1rem;
@@ -22,6 +25,42 @@ export const HeaderContainer = styled.header`
     gap: 0.5rem;
     padding: 0.5rem 0.5rem;
   }
+`;
+
+export const HeaderLink = styled(Link)`
+display: flex;
+align-items: center;
+justify-content: center;
+color: ${props => props.$isActive ? `${theme.colors.text}` : `${theme.colors.textMuted}`};
+border-bottom:${props => props.$isActive ? `2px solid ${theme.colors.accent}` : 'none'};
+padding-bottom: 5px;
+text-decoration: none;
+font-size: 19px;
+
+transition: color 300ms;
+
+&:hover {
+    color: ${theme.colors.accent};
+}
+`
+
+export const Navigation = styled.nav`
+display: flex;
+align-items: center;
+justify-content: center;
+height: 72px;
+
+div  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    hr {
+        height: 24px;
+        border: 1px solid ${theme.colors.primary};
+    }
+}
 `;
 
 export const LogoTitle = styled.h1`
