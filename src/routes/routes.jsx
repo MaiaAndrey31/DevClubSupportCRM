@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import App from "./Pages/Trophy";
-import Home from "./Pages/Home";
+import Trophy from "../Pages/Trophy";
+import Home from "../Pages/Home";
 
 export default function AppRoutes() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/painel" element={<App />} />
+        <Route path="/painel" element={<Trophy />} />
       </Routes>
     </Router>
   );

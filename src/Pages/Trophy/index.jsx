@@ -7,7 +7,7 @@ import OrderModal from "../../components/OrderModal";
 import { getPedidos } from "../../api/api";
 import { Content, Layout, MainContent } from "./styles";
 
-function App() {
+function Trophy() {
   const [status, setStatus] = useState("connecting");
   const [pedidos, setPedidos] = useState([]);
   const [filtros, setFiltros] = useState({ status: "", busca: "" });
@@ -115,4 +115,4 @@ function App() {
   );
 }
 
-export default App;
+export default Trophy;
