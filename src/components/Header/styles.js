@@ -32,7 +32,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 color: ${props => props.$isActive ? `${theme.colors.text}` : `${theme.colors.textMuted}`};
-border-bottom:${props => props.$isActive ? `2px solid ${theme.colors.accent}` : 'none'};
+border-bottom:${props => props.$isActive ? `4px solid ${theme.colors.accent}` : 'none'};
 padding-bottom: 5px;
 text-decoration: none;
 font-size: 19px;
