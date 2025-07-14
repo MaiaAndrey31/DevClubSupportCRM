@@ -1,4 +1,4 @@
-import { Link as LinkIcon, GithubLogo, Book, Wrench, Trophy } from "@phosphor-icons/react";
+import {LinkIcon, Book, Wrench, RobotIcon, TrophyIcon } from "@phosphor-icons/react";
 import Header from "../../components/Header";
 import {
   HomeContainer,
@@ -26,7 +26,7 @@ const Home = () => {
             <div>
               <MenuItem>
                 <button className="button_slide slide_diagonal" onClick={() => navigate("/painel")}>
-                  <Trophy size={60} color={theme.colors.text} weight="fill" />
+                  <TrophyIcon size={60} color={theme.colors.text} weight="fill" />
                   <p>Troféus Admin</p>
                 </button>
               </MenuItem>
@@ -38,8 +38,8 @@ const Home = () => {
               </MenuItem>
               <MenuItem>
                 <button className="button_slide slide_diagonal">
-                  <GithubLogo size={60} color={theme.colors.text} />
-                  <p>GitHub</p>
+                  <RobotIcon size={60} color={theme.colors.text} />
+                  <p>FAQ Chatbot</p>
                 </button>
               </MenuItem>
               <MenuItem>

@@ -48,11 +48,12 @@ cursor: pointer;
 button {
   display: flex;
   height: 160px;
-  width: 160px;
+  width: 200px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  text-align: center;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -64,6 +65,7 @@ p {
   font-size: 1.2rem;
   font-weight: 700;
   color: ${theme.colors.text};
+  
 }
 
 .button_slide {
