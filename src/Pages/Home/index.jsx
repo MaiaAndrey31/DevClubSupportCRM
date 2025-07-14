@@ -23,31 +23,31 @@ const Home = () => {
             <Title>Bem-vindo ao Dev Club CRM</Title>
             <div>
               <MenuItem>
-                <button onClick={() => navigate("/painel")}>
+                <button className="button_slide slide_diagonal" onClick={() => navigate("/painel")}>
                   <TrophyIcon size={60} color={theme.colors.text} />
                   <p>Troféus Admin</p>
                 </button>
               </MenuItem>
               <MenuItem>
-                <button>
+                <button className="button_slide slide_diagonal">
                   <RobotIcon size={60} color={theme.colors.text} />
                   <p>FAQ Suporte</p>
                 </button>
               </MenuItem>
               <MenuItem>
-                <button>
+                <button className="button_slide slide_diagonal"  >
                   <RobotIcon size={60} color={theme.colors.text} />
                   <p>FAQ Suporte</p>
                 </button>
               </MenuItem>
               <MenuItem>
-                <button>
+                <button className="button_slide slide_diagonal">
                   <RobotIcon size={60} color={theme.colors.text} />
                   <p>FAQ Suporte</p>
                 </button>
               </MenuItem>
               <MenuItem>
-                <button>
+                <button className="button_slide slide_diagonal">
                 <LinkIcon size={60} color={theme.colors.text} />
                   <p>Links Úteis</p>
                 </button>
