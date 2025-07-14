@@ -1,4 +1,4 @@
-import { LinkIcon, RobotIcon, TrophyIcon } from "@phosphor-icons/react";
+import { Link as LinkIcon, GithubLogo, Book, Wrench, Trophy } from "@phosphor-icons/react";
 import Header from "../../components/Header";
 import {
   HomeContainer,
@@ -10,10 +10,12 @@ import {
 } from "./styles";
 import theme from "../../styles/theme";
 import { useNavigate } from "react-router-dom";
-// Dummy props para SidebarFilters e Header na Home
+
 const status = "connected";
+
 const Home = () => {
   const navigate = useNavigate();
+  
   return (
     <Layout>
       <Header status={status} page="Dev Club Support CRM" />
@@ -24,32 +26,32 @@ const Home = () => {
             <div>
               <MenuItem>
                 <button className="button_slide slide_diagonal" onClick={() => navigate("/painel")}>
-                  <TrophyIcon size={60} color={theme.colors.text} />
+                  <Trophy size={60} color={theme.colors.text} weight="fill" />
                   <p>Troféus Admin</p>
                 </button>
               </MenuItem>
               <MenuItem>
-                <button className="button_slide slide_diagonal">
-                  <RobotIcon size={60} color={theme.colors.text} />
-                  <p>FAQ Suporte</p>
-                </button>
-              </MenuItem>
-              <MenuItem>
-                <button className="button_slide slide_diagonal"  >
-                  <RobotIcon size={60} color={theme.colors.text} />
-                  <p>FAQ Suporte</p>
-                </button>
-              </MenuItem>
-              <MenuItem>
-                <button className="button_slide slide_diagonal">
-                  <RobotIcon size={60} color={theme.colors.text} />
-                  <p>FAQ Suporte</p>
-                </button>
-              </MenuItem>
-              <MenuItem>
-                <button className="button_slide slide_diagonal">
-                <LinkIcon size={60} color={theme.colors.text} />
+                <button className="button_slide slide_diagonal" onClick={() => navigate("/links")}>
+                  <LinkIcon size={60} color={theme.colors.text} weight="fill" />
                   <p>Links Úteis</p>
+                </button>
+              </MenuItem>
+              <MenuItem>
+                <button className="button_slide slide_diagonal">
+                  <GithubLogo size={60} color={theme.colors.text} />
+                  <p>GitHub</p>
+                </button>
+              </MenuItem>
+              <MenuItem>
+                <button className="button_slide slide_diagonal">
+                  <Book size={60} color={theme.colors.text} />
+                  <p>Documentação</p>
+                </button>
+              </MenuItem>
+              <MenuItem>
+                <button className="button_slide slide_diagonal">
+                  <Wrench size={60} color={theme.colors.text} />
+                  <p>Ferramentas</p>
                 </button>
               </MenuItem>
             </div>

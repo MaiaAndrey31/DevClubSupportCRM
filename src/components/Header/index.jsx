@@ -21,18 +21,19 @@ export default function Header({ status, page }) {
             <HeaderLink to={'/painel'} $isActive={pathname === '/painel'}>
               Troféus
             </HeaderLink>
-            <HeaderLink to={'/faq'} $isActive={pathname === '/faq'}>
-              FAQ
-            </HeaderLink>
-            <HeaderLink to={'/faq'} $isActive={pathname === '/faq'}>
-              FAQ
-            </HeaderLink>
-            <HeaderLink to={'/utils'} $isActive={pathname === '/utils'}>
-              FAQ
-            </HeaderLink>
-            <HeaderLink to={'/utils'} $isActive={pathname === '/utils'}>
+            <HeaderLink to={'/links'} $isActive={pathname === '/links'}>
             Links Úteis
             </HeaderLink>
+            <HeaderLink to={'/faq'} $isActive={pathname === '/faq'}>
+              FAQ
+            </HeaderLink>
+            <HeaderLink to={'/faq'} $isActive={pathname === '/faq'}>
+              FAQ
+            </HeaderLink>
+            <HeaderLink to={'/utils'} $isActive={pathname === '/utils'}>
+              FAQ
+            </HeaderLink>
+            
         </div>
       </Navigation>
       <StatusIndicator className={status}>
